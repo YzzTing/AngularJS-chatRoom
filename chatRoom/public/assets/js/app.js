@@ -63,6 +63,7 @@ app.controller("chatCtrl",['$scope','socket','randomColor','userService',functio
     }
     $scope.scrollToBottom=function(){
         messageWrapper.scrollTop(messageWrapper[0].scrollHeight);
+        //消息滚动
     }
     //推送消息
     $scope.postMessage=function(){
