@@ -1,0 +1,28 @@
+{
+  "name": "vuechatroom",
+  "version": "1.0.0",
+  "description": "vue-charRoom By yzz",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yzzting/AngularJS-chatRoom.git"
+  },
+  "keywords": [
+    "vue",
+    "socket"
+  ],
+  "author": "yzz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yzzting/AngularJS-chatRoom/issues"
+  },
+  "homepage": "https://github.com/yzzting/AngularJS-chatRoom#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "socket.io": "^1.4.6",
+    "vue": "^1.0.24"
+  }
+}
