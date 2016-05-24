@@ -1,11 +1,25 @@
-# vue-chatRoom
-a based on vue.js and soctek.io chatRoom
+# vuechatroom
 
-## Install
+> a vue.js chatroom
 
-```shell
-git clone git@github.com:yzzting/vue-chatRoom.git
-cd chatRoom
+## Build Setup
+
+``` bash
+# install dependencies
 npm install
-node app
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# run unit tests
+npm run unit
+
+# run e2e tests
+npm run e2e
+
+# run all tests
+npm test
 ```
