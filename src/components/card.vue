@@ -4,13 +4,16 @@
     };
 </script>
 
-<template lang="jade">
-div.m-card
-    header
-        img.avatar(width="40" height="40" alt="userImg")
-        p.name {{user.name}}
-    footer
-        input.search(type="text" placeholder="search ..." v-model="search")
+<template>
+    <div class="m-card">
+        <header>
+            <img class="avatar" width="40" height="40" :alt="user.name" :src="user.img">
+            <p class="name">{{user.name}}</p>
+        </header>
+        <footer>
+            <input class="search" type="text" placeholder="search user..." v-model="search">
+        </footer>
+    </div>
 </template>
 
 <style style="less">

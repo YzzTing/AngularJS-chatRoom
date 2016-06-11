@@ -49,19 +49,21 @@ export default {
 
 </script>
 
-<template lang="jade">
-div
-    div.sidebar
-        card(user="user" search.sync="search")
-        list(user-list="userList" session="session" session-index.sync="sessionIndex" search="search")
-    duv.main
-        message(session="session" user="user" user-list="userList")
-        text(session="session")
+<template>
+    <div>
+        <div class="sidebar">
+            <card :user="user" :search.sync="search"></card>
+            <list :user-list="userList" :session="session" :session-index.sync="sessionIndex" :search="search"></list>
+        </div>
+        <div class="main">
+            <message :session="session" :user="user" :user-list="userList"></message>
+            <text :session="session"></text>
+        </div>
+    </div>
 </template>
 
 <style lang="less">
     #app{
-        overflow:hibben;
         border-radius:5px;
         .sidebar,.main {
             height:100%;
@@ -70,12 +72,10 @@ div
             float:left;
             width:200px;
             color:rgba(246, 74, 182, 0.66);
-            background:#fff;
         }
         .main {
             position:relative;
             overflow:hibben;
-            background:#fff;
         }
         .m-text {
             position:absolute;
