@@ -42,7 +42,7 @@ export default {
         }
     },
     components: {
-        card, list, text, message
+        card, list
     }
 };
 
@@ -72,10 +72,12 @@ export default {
             float:left;
             width:200px;
             color:rgba(246, 74, 182, 0.66);
+            background-color:#fff;
         }
         .main {
-            position:relative;
-            overflow:hibben;
+            position: relative;
+            background-color: #fff;
+            overflow: hidden;
         }
         .m-text {
             position:absolute;

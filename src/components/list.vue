@@ -1,7 +1,17 @@
 <script>
     export default {
-
-    }
+        props:['userList','sessionIndex','session','search'],
+        methods: {
+            select (value) {
+                this.sessionIndex = this.userList.indexOf(value);
+            }
+        },
+        filters: {
+            search (list) {
+                return list.filter(item => item.name.indexOf(this.search) > -1)
+            }
+        }
+    };
 </script>
 
 <template>
@@ -15,5 +25,22 @@
     </div>
 </template>
 
-<style>
+<style lang="less">
+    .m-list {
+        li {
+            padding: 12px 15px;
+            border-bottom:1px solid rgba(246, 74, 182, 0.66);
+            cursor:pointer;
+        }
+        .avatar, .name {
+            vertical-align: middle;
+        }
+        .avatar {
+            border-radius: 2px;
+        }
+        .name {
+            display: inline-block;
+            margin: 0 0 0 15px;
+        }
+    }
 </style>
