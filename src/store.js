@@ -16,12 +16,12 @@ if (!localStorage.getItem(key)) {
         userList: [
             {
                 id: 2,
-                name: '示例介绍',
-                img: 'dist/images/2.png'
+                name: 'EXBF',
+                img: 'dist/images/2.jpg'
             },
             {
                 id: 3,
-                name: 'webpack',
+                name: 'EXGF',
                 img: 'dist/images/3.jpg'
             }
         ],

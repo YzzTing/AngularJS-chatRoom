@@ -20,7 +20,6 @@
     .m-card {
         padding: 12px;
         border-bottom: solid 1px rgba(246, 74, 182, 0.66);
-
         footer {
             margin-top: 10px;
         }

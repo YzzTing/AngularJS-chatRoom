@@ -42,7 +42,7 @@ export default {
         }
     },
     components: {
-        card, list
+        card, list,text,message
     }
 };
 
@@ -71,8 +71,8 @@ export default {
         .sidebar {
             float:left;
             width:200px;
-            color:rgba(246, 74, 182, 0.66);
-            background-color:#fff;
+            color:#fff;
+            background-color: rgba(246, 74, 182, 0.48);
         }
         .main {
             position: relative;
