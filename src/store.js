@@ -32,7 +32,7 @@ if (!localStorage.getItem(key)) {
                 userId: 2,
                 messages: [
                     {
-                        text: '',
+                        text: 'hello',
                         date: now
                     },
                     {

@@ -8,14 +8,22 @@
         },
         methods: {
             inputing (e) {
-                if (e.ctryKey && e.keyCode === 13 && this.text.length) {
+                if (e.ctrlKey && e.keyCode === 13 && this.text.length) {
                     this.session.messages.push ({
                         text:this.text,
-                        data:new Date(),
+                        date:new Date(),
                         self:true
                     });
                     this.text = '';
                 }
+            },
+            btnInput () {
+                this.session.messages.push ({
+                    text:this.text,
+                    date:new Date(),
+                    self:true
+                });
+                this.text = '';
             }
         }
     };
@@ -26,7 +34,7 @@
         <textarea v-model="text" @keyup="inputing"></textarea>
         <div class="action">
             <span>按 Ctrl + Enter 发送</span>
-            <a href="javascript:;" class="btn" @click="inputing">发送</a>
+            <a href="javascript:;" class="btn" v-on:click="btnInput">发送</a>
         </div>
     </div>
 </template>

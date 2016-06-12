@@ -11,15 +11,10 @@ export default {
         let serverData = store.fetch();
 
         return {
-            // 登录用户
             user: serverData.user,
-            // 用户列表
             userList: serverData.userList,
-            // 会话列表
             sessionList: serverData.sessionList,
-            // 搜索key
             search: '',
-            // 选中的会话Index
             sessionIndex: 0
         };
     },
@@ -29,7 +24,6 @@ export default {
         }
     },
     watch: {
-        // 每当sessionList改变时，保存到localStorage中
         sessionList: {
             deep: true,
             handler () {
@@ -42,7 +36,7 @@ export default {
         }
     },
     components: {
-        card, list,text,message
+        card,list,text,message
     }
 };
 
