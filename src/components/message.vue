@@ -8,7 +8,6 @@
             }
         },
         filters: {
-            //头像
             avatar (item) {
                 let user = item.self ? this.user : this.sessionUser;
                 return user && user.img;
